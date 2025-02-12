@@ -2,27 +2,25 @@
 class Notes {
 	public static void main(String[] args) {
 
-		//if statement
-
 		int num;
-		num = 5;
-
-		int num3 = 0;//setup a default value for the variable
+		num = -5;
 		
-		if (num < 10) {
-			System.out.println(num + " was printed becuase if was true.");
-			num3 = 5;
-			int num2 = 9; //a variable created in an if statement, only exists inside that if statement
-			//this is the case for any curly brackets
-		}
-		//code cannot be written here.  Your program will crash
-		else { //when the condition(s) above is false
-			//num >= 10
-			System.out.println(num + " was printed becuase if was false.");
-		}
 
+		if (num < 10 && num > 0) { //only runs when the condition is true
+			System.out.println("Your number was less than 10");
+			num = 15;
+			int num2 = 9; //can't create a variable inside and use it outside
+			System.out.println(num2);
+		}
+		//cannot code between if and else
+		// System.out.println("no");
+
+		//what condition your else represents
+		//num <= 0 || num >= 10
+		else { //when the above condition is false, this will run
+			System.out.println("The else ran");
+		}
+		System.out.println(num);
 		// System.out.println(num2);
-		System.out.println(num3);
-
 	}
 }
