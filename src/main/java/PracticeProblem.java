@@ -6,13 +6,16 @@ public class PracticeProblem {
 
 
 	public static String evenOrOdd(int num){
+		String word;
 		if (num%2==0){
-		return "Even";
-
+		word = "Even";
+		return word;
 		}
 		else{
-		return "Odd";
+			word= "Odd";
+		return word;
 		}
+	}
 
 	public static String teacherOrStudent(String word){
 		if (word.equals("Kalisz")){
@@ -23,7 +26,7 @@ public class PracticeProblem {
 		}
 	}
 
-	public static int farhterFromZero(int num){
+	public static int fartherFromZero(int num){
 		if (num<0){
 			return num-5;
 		}
@@ -43,11 +46,14 @@ public class PracticeProblem {
 		}
 	}
 	public static String positiveOrNegative(double num){
+		String word;
 		if (num >0){
-			return "Positive";
+			word ="Positive";
+			return word;
 		}
 		else{
-			return "Neagaive";
+			word = "Negative";
+			return word;
 		}
 	}
 	public static String highOrLow(int num){
@@ -66,3 +72,4 @@ public class PracticeProblem {
 			return "The word is not Hello";
 		}
 	}
+}
